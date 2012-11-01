@@ -115,7 +115,7 @@ print "Searching for Waldo"
 # Iterate over the list of rectangles representing red-white borders
 for outer_key, rectangle in enumerate(red_white_super_rectangles):
 	# This section counts red-white border rectangles below and vertically in line with 
-	# the rectangle we're starting from"""
+	# the rectangle we're starting from
 	
 	vertical = rectangle[0].stop
 	last_hit = vertical
@@ -140,7 +140,7 @@ for outer_key, rectangle in enumerate(red_white_super_rectangles):
 				key = 0
 							
 			# If the key is not 0, a red-white border region was plotted there,
-			# meaning this is potentially part of an interesting set of stripes"""	
+			# meaning this is potentially part of an interesting set of stripes
 			if not key == 0:
 				# Add the key at this location to the list of potential stripes
 				potential_stripe.append(key)
